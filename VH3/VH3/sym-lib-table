@@ -1,0 +1,5 @@
+(sym_lib_table
+  (lib (name sub_circ_completo-rescue)(type Legacy)(uri C:/Users/Usuario/Desktop/UNIFEI/5_semestre/aprendizagem_baseada_em_projetos/sub_circ_completos/VH1/sub_circ_completo-rescue.lib)(options "")(descr ""))
+  (lib (name VH2-rescue)(type Legacy)(uri ${KIPRJMOD}/VH2-rescue.lib)(options "")(descr ""))
+  (lib (name VH3-rescue)(type Legacy)(uri ${KIPRJMOD}/VH3-rescue.lib)(options "")(descr ""))
+)

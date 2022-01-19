@@ -1,0 +1,252 @@
+Version 4.0 HI-TECH Software Intermediate Code
+"23 ./adc.h
+[; ;./adc.h: 23:  int adcRead1(void);
+[v _adcRead1 `(i ~T0 @X0 0 ef ]
+"24
+[; ;./adc.h: 24:     int adcRead2(void);
+[v _adcRead2 `(i ~T0 @X0 0 ef ]
+"23 ./pwm.h
+[; ;./pwm.h: 23:  void pwmSet1(unsigned char porcento);
+[v _pwmSet1 `(v ~T0 @X0 0 ef1`uc ]
+"25
+[; ;./pwm.h: 25:  void pwmFrequency(unsigned int freq);
+[v _pwmFrequency `(v ~T0 @X0 0 ef1`ui ]
+"32 ./rtc.h
+[; ;./rtc.h: 32:     unsigned char rtcGetHours(void);
+[v _rtcGetHours `(uc ~T0 @X0 0 ef ]
+"8 var.c
+[; ;var.c: 8: static char state;
+[v _state `uc ~T0 @X0 1 s ]
+"9
+[; ;var.c: 9: static char language;
+[v _language `uc ~T0 @X0 1 s ]
+"10
+[; ;var.c: 10: static int time;
+[v _time `i ~T0 @X0 1 s ]
+"11
+[; ;var.c: 11: static int alarmLevel;
+[v _alarmLevel `i ~T0 @X0 1 s ]
+"12
+[; ;var.c: 12: static int alarmLevel1;
+[v _alarmLevel1 `i ~T0 @X0 1 s ]
+"14
+[; ;var.c: 14: void varInit(void) {
+[v _varInit `(v ~T0 @X0 1 ef ]
+{
+[e :U _varInit ]
+[f ]
+"15
+[; ;var.c: 15:     state = 0;
+[e = _state -> -> 0 `i `uc ]
+"16
+[; ;var.c: 16:     time = 1000;
+[e = _time -> 1000 `i ]
+"17
+[; ;var.c: 17:     alarmLevel = 512;
+[e = _alarmLevel -> 512 `i ]
+"18
+[; ;var.c: 18:     alarmLevel1 = 512;
+[e = _alarmLevel1 -> 512 `i ]
+"19
+[; ;var.c: 19: }
+[e :UE 1 ]
+}
+"21
+[; ;var.c: 21: char getState(void) {
+[v _getState `(uc ~T0 @X0 1 ef ]
+{
+[e :U _getState ]
+[f ]
+"22
+[; ;var.c: 22:     return state;
+[e ) _state ]
+[e $UE 2  ]
+"23
+[; ;var.c: 23: }
+[e :UE 2 ]
+}
+"25
+[; ;var.c: 25: void setState(char newState) {
+[v _setState `(v ~T0 @X0 1 ef1`uc ]
+{
+[e :U _setState ]
+[v _newState `uc ~T0 @X0 1 r1 ]
+[f ]
+"26
+[; ;var.c: 26:     state = newState;
+[e = _state _newState ]
+"27
+[; ;var.c: 27: }
+[e :UE 3 ]
+}
+"29
+[; ;var.c: 29: int getTime(void) {
+[v _getTime `(i ~T0 @X0 1 ef ]
+{
+[e :U _getTime ]
+[f ]
+"30
+[; ;var.c: 30:     return time;
+[e ) _time ]
+[e $UE 4  ]
+"31
+[; ;var.c: 31: }
+[e :UE 4 ]
+}
+"33
+[; ;var.c: 33: void setTime(int newTime) {
+[v _setTime `(v ~T0 @X0 1 ef1`i ]
+{
+[e :U _setTime ]
+[v _newTime `i ~T0 @X0 1 r1 ]
+[f ]
+"34
+[; ;var.c: 34:     time = newTime;
+[e = _time _newTime ]
+"35
+[; ;var.c: 35: }
+[e :UE 5 ]
+}
+"37
+[; ;var.c: 37: int getAlarmLevel(void) {
+[v _getAlarmLevel `(i ~T0 @X0 1 ef ]
+{
+[e :U _getAlarmLevel ]
+[f ]
+"38
+[; ;var.c: 38:     return alarmLevel;
+[e ) _alarmLevel ]
+[e $UE 6  ]
+"39
+[; ;var.c: 39: }
+[e :UE 6 ]
+}
+"41
+[; ;var.c: 41: int getAlarmLevel1(void) {
+[v _getAlarmLevel1 `(i ~T0 @X0 1 ef ]
+{
+[e :U _getAlarmLevel1 ]
+[f ]
+"42
+[; ;var.c: 42:     return alarmLevel1;
+[e ) _alarmLevel1 ]
+[e $UE 7  ]
+"43
+[; ;var.c: 43: }
+[e :UE 7 ]
+}
+"45
+[; ;var.c: 45: void setAlarmLevel(int newAlarmLevel) {
+[v _setAlarmLevel `(v ~T0 @X0 1 ef1`i ]
+{
+[e :U _setAlarmLevel ]
+[v _newAlarmLevel `i ~T0 @X0 1 r1 ]
+[f ]
+"46
+[; ;var.c: 46:     alarmLevel = newAlarmLevel;
+[e = _alarmLevel _newAlarmLevel ]
+"47
+[; ;var.c: 47: }
+[e :UE 8 ]
+}
+"49
+[; ;var.c: 49: void setAlarmLevel1(int newAlarmLevel1) {
+[v _setAlarmLevel1 `(v ~T0 @X0 1 ef1`i ]
+{
+[e :U _setAlarmLevel1 ]
+[v _newAlarmLevel1 `i ~T0 @X0 1 r1 ]
+[f ]
+"50
+[; ;var.c: 50:     alarmLevel1 = newAlarmLevel1;
+[e = _alarmLevel1 _newAlarmLevel1 ]
+"51
+[; ;var.c: 51: }
+[e :UE 9 ]
+}
+"54
+[; ;var.c: 54: void teste1(void) {
+[v _teste1 `(v ~T0 @X0 1 ef ]
+{
+[e :U _teste1 ]
+[f ]
+"56
+[; ;var.c: 56:     if ((adcRead1() >= getAlarmLevel()) && (adcRead2() <= getAlarmLevel()) || (adcRead1() <= getAlarmLevel()) && (adcRead2() >= getAlarmLevel()) ) {
+[e $ ! || && >= ( _adcRead1 ..  ( _getAlarmLevel ..  <= ( _adcRead2 ..  ( _getAlarmLevel ..  && <= ( _adcRead1 ..  ( _getAlarmLevel ..  >= ( _adcRead2 ..  ( _getAlarmLevel ..  11  ]
+{
+"57
+[; ;var.c: 57:         pwmSet1(100);
+[e ( _pwmSet1 (1 -> -> 100 `i `uc ]
+"58
+[; ;var.c: 58:         pwmFrequency(1000);
+[e ( _pwmFrequency (1 -> -> 1000 `i `ui ]
+"59
+[; ;var.c: 59:     }
+}
+[e $U 12  ]
+"61
+[; ;var.c: 61:      else {
+[e :U 11 ]
+{
+"62
+[; ;var.c: 62:         pwmSet1(0);
+[e ( _pwmSet1 (1 -> -> 0 `i `uc ]
+"63
+[; ;var.c: 63:         pwmFrequency(0);
+[e ( _pwmFrequency (1 -> -> 0 `i `ui ]
+"65
+[; ;var.c: 65:     }
+}
+[e :U 12 ]
+"66
+[; ;var.c: 66: }
+[e :UE 10 ]
+}
+"68
+[; ;var.c: 68: char getLanguage(void) {
+[v _getLanguage `(uc ~T0 @X0 1 ef ]
+{
+[e :U _getLanguage ]
+[f ]
+"69
+[; ;var.c: 69:     return language;
+[e ) _language ]
+[e $UE 13  ]
+"70
+[; ;var.c: 70: }
+[e :UE 13 ]
+}
+"72
+[; ;var.c: 72: void setLanguage(char newLanguage) {
+[v _setLanguage `(v ~T0 @X0 1 ef1`uc ]
+{
+[e :U _setLanguage ]
+[v _newLanguage `uc ~T0 @X0 1 r1 ]
+[f ]
+"75
+[; ;var.c: 75:     language = newLanguage % 4;
+[e = _language -> % -> _newLanguage `i -> 4 `i `uc ]
+"76
+[; ;var.c: 76: }
+[e :UE 14 ]
+}
+"78
+[; ;var.c: 78: int retornaHora(void) {
+[v _retornaHora `(i ~T0 @X0 1 ef ]
+{
+[e :U _retornaHora ]
+[f ]
+"79
+[; ;var.c: 79:     int z = 0;
+[v _z `i ~T0 @X0 1 a ]
+[e = _z -> 0 `i ]
+"81
+[; ;var.c: 81:     z = rtcGetHours();
+[e = _z -> ( _rtcGetHours ..  `i ]
+"83
+[; ;var.c: 83:     return z;
+[e ) _z ]
+[e $UE 15  ]
+"84
+[; ;var.c: 84: }
+[e :UE 15 ]
+}

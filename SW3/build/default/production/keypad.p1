@@ -1,0 +1,46 @@
+Version 4.0 HI-TECH Software Intermediate Code
+"26 keypad.c
+[; ;keypad.c: 26: static unsigned int valor = 0x00;
+[v _valor `ui ~T0 @X0 1 s ]
+[i _valor
+-> -> 0 `i `ui
+]
+"29
+[; ;keypad.c: 29: unsigned char kpRead(void) {
+[v _kpRead `(uc ~T0 @X0 1 ef ]
+{
+[e :U _kpRead ]
+[f ]
+"30
+[; ;keypad.c: 30:     (*(volatile __near unsigned char*)0xF83) = 0x01;
+[e = *U -> -> 3971 `i `*VNuc -> -> 1 `i `uc ]
+"31
+[; ;keypad.c: 31:     return ~(*(volatile __near unsigned char*)0xF81);
+[e ) -> ~ -> *U -> -> 3969 `i `*VNuc `i `uc ]
+[e $UE 1  ]
+"32
+[; ;keypad.c: 32: }
+[e :UE 1 ]
+}
+"35
+[; ;keypad.c: 35: void kpInit(void) {
+[v _kpInit `(v ~T0 @X0 1 ef ]
+{
+[e :U _kpInit ]
+[f ]
+"36
+[; ;keypad.c: 36:     (*(volatile __near unsigned char*)0xF93) = 0xff;
+[e = *U -> -> 3987 `i `*VNuc -> -> 255 `i `uc ]
+"37
+[; ;keypad.c: 37:     (*(volatile __near unsigned char*)0xF95) = 0x00;
+[e = *U -> -> 3989 `i `*VNuc -> -> 0 `i `uc ]
+"39
+[; ;keypad.c: 39:     (((*(volatile __near unsigned char*)0xFF1)) &= ~(1<<(7)) );
+[e =& *U -> -> 4081 `i `*VNuc -> ~ << -> 1 `i -> 7 `i `uc ]
+"41
+[; ;keypad.c: 41:     (*(volatile __near unsigned char*)0xFC1) = 0b00001101;
+[e = *U -> -> 4033 `i `*VNuc -> -> 13 `i `uc ]
+"42
+[; ;keypad.c: 42: }
+[e :UE 2 ]
+}

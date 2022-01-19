@@ -1,0 +1,691 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Wire Notes Line
+	15550 6050 15550 5950
+Wire Notes Line
+	16000 5750 16000 5700
+$Comp
+L 1825910-6:1825910-6 SW1
+U 1 1 5EF8ED6F
+P 2200 3250
+F 0 "SW1" H 2300 3500 50  0000 R CNN
+F 1 "1825910-6" V 2155 3022 50  0001 R CNN
+F 2 "1825910-6:SW_1825910-6-4" H 2200 3250 50  0001 L BNN
+F 3 "50 mA" H 2200 3250 50  0001 L BNN
+F 4 "Single Pole - Single Throw" H 2200 3250 50  0001 L BNN "Campo4"
+F 5 "1825910-6" H 2200 3250 50  0001 L BNN "Campo5"
+F 6 "https://www.te.com/usa-en/product-1825910-6.html?te_bu=Cor&te_type=disp&te_campaign=seda_glo_cor-seda-global-disp-prtnr-fy19-seda-model-bom-cta_sma-317_1&elqCampaignId=32493" H 2200 3250 50  0001 L BNN "Campo6"
+F 7 "Compliant" H 2200 3250 50  0001 L BNN "Campo7"
+	1    2200 3250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L 1825910-6:1825910-6 SW2
+U 1 1 5EF91236
+P 2950 3250
+F 0 "SW2" H 3050 3500 50  0000 R CNN
+F 1 "1825910-6" V 2905 3022 50  0001 R CNN
+F 2 "1825910-6:SW_1825910-6-4" H 2950 3250 50  0001 L BNN
+F 3 "50 mA" H 2950 3250 50  0001 L BNN
+F 4 "Single Pole - Single Throw" H 2950 3250 50  0001 L BNN "Campo4"
+F 5 "1825910-6" H 2950 3250 50  0001 L BNN "Campo5"
+F 6 "https://www.te.com/usa-en/product-1825910-6.html?te_bu=Cor&te_type=disp&te_campaign=seda_glo_cor-seda-global-disp-prtnr-fy19-seda-model-bom-cta_sma-317_1&elqCampaignId=32493" H 2950 3250 50  0001 L BNN "Campo6"
+F 7 "Compliant" H 2950 3250 50  0001 L BNN "Campo7"
+	1    2950 3250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L 1825910-6:1825910-6 SW3
+U 1 1 5EF93550
+P 3700 3250
+F 0 "SW3" H 3800 3500 50  0000 R CNN
+F 1 "1825910-6" V 3655 3022 50  0001 R CNN
+F 2 "1825910-6:SW_1825910-6-4" H 3700 3250 50  0001 L BNN
+F 3 "50 mA" H 3700 3250 50  0001 L BNN
+F 4 "Single Pole - Single Throw" H 3700 3250 50  0001 L BNN "Campo4"
+F 5 "1825910-6" H 3700 3250 50  0001 L BNN "Campo5"
+F 6 "https://www.te.com/usa-en/product-1825910-6.html?te_bu=Cor&te_type=disp&te_campaign=seda_glo_cor-seda-global-disp-prtnr-fy19-seda-model-bom-cta_sma-317_1&elqCampaignId=32493" H 3700 3250 50  0001 L BNN "Campo6"
+F 7 "Compliant" H 3700 3250 50  0001 L BNN "Campo7"
+	1    3700 3250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L 1825910-6:1825910-6 SW4
+U 1 1 5EF959D3
+P 4450 3250
+F 0 "SW4" H 4550 3500 50  0000 R CNN
+F 1 "1825910-6" V 4405 3022 50  0001 R CNN
+F 2 "1825910-6:SW_1825910-6-4" H 4450 3250 50  0001 L BNN
+F 3 "50 mA" H 4450 3250 50  0001 L BNN
+F 4 "Single Pole - Single Throw" H 4450 3250 50  0001 L BNN "Campo4"
+F 5 "1825910-6" H 4450 3250 50  0001 L BNN "Campo5"
+F 6 "https://www.te.com/usa-en/product-1825910-6.html?te_bu=Cor&te_type=disp&te_campaign=seda_glo_cor-seda-global-disp-prtnr-fy19-seda-model-bom-cta_sma-317_1&elqCampaignId=32493" H 4450 3250 50  0001 L BNN "Campo6"
+F 7 "Compliant" H 4450 3250 50  0001 L BNN "Campo7"
+	1    4450 3250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L 1825910-6:1825910-6 SW5
+U 1 1 5EF97A08
+P 5200 3250
+F 0 "SW5" H 5300 3500 50  0000 R CNN
+F 1 "1825910-6" V 5155 3022 50  0001 R CNN
+F 2 "1825910-6:SW_1825910-6-4" H 5200 3250 50  0001 L BNN
+F 3 "50 mA" H 5200 3250 50  0001 L BNN
+F 4 "Single Pole - Single Throw" H 5200 3250 50  0001 L BNN "Campo4"
+F 5 "1825910-6" H 5200 3250 50  0001 L BNN "Campo5"
+F 6 "https://www.te.com/usa-en/product-1825910-6.html?te_bu=Cor&te_type=disp&te_campaign=seda_glo_cor-seda-global-disp-prtnr-fy19-seda-model-bom-cta_sma-317_1&elqCampaignId=32493" H 5200 3250 50  0001 L BNN "Campo6"
+F 7 "Compliant" H 5200 3250 50  0001 L BNN "Campo7"
+	1    5200 3250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R17
+U 1 1 5EF9C45E
+P 2200 2550
+F 0 "R17" H 2270 2596 50  0000 L CNN
+F 1 "8k2" H 2270 2505 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 2130 2550 50  0001 C CNN
+F 3 "~" H 2200 2550 50  0001 C CNN
+	1    2200 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R18
+U 1 1 5EF9D9A2
+P 2950 2550
+F 0 "R18" H 3020 2596 50  0000 L CNN
+F 1 "6k2" H 3020 2505 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 2880 2550 50  0001 C CNN
+F 3 "~" H 2950 2550 50  0001 C CNN
+	1    2950 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R19
+U 1 1 5EF9E5AA
+P 3700 2550
+F 0 "R19" H 3770 2596 50  0000 L CNN
+F 1 "4k7" H 3770 2505 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 3630 2550 50  0001 C CNN
+F 3 "~" H 3700 2550 50  0001 C CNN
+	1    3700 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R21
+U 1 1 5EF9F1B2
+P 4450 2550
+F 0 "R21" H 4520 2596 50  0000 L CNN
+F 1 "3k3" H 4520 2505 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 4380 2550 50  0001 C CNN
+F 3 "~" H 4450 2550 50  0001 C CNN
+	1    4450 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R22
+U 1 1 5EF9FDDA
+P 5200 2550
+F 0 "R22" H 5270 2596 50  0000 L CNN
+F 1 "1k" H 5270 2505 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 5130 2550 50  0001 C CNN
+F 3 "~" H 5200 2550 50  0001 C CNN
+	1    5200 2550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2200 2400 2200 2200
+Wire Wire Line
+	2200 2200 2950 2200
+Wire Wire Line
+	2950 2200 2950 2400
+Wire Wire Line
+	2950 2200 3700 2200
+Wire Wire Line
+	3700 2200 3700 2400
+Connection ~ 2950 2200
+Wire Wire Line
+	3700 2200 4450 2200
+Wire Wire Line
+	4450 2200 4450 2400
+Connection ~ 3700 2200
+Wire Wire Line
+	4450 2200 5200 2200
+Wire Wire Line
+	5200 2200 5200 2400
+Connection ~ 4450 2200
+$Comp
+L power:+3.3V #PWR0161
+U 1 1 5EFF3849
+P 3700 2200
+F 0 "#PWR0161" H 3700 2050 50  0001 C CNN
+F 1 "+3.3V" H 3715 2373 50  0000 C CNN
+F 2 "" H 3700 2200 50  0001 C CNN
+F 3 "" H 3700 2200 50  0001 C CNN
+	1    3700 2200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2100 2850 2100 2800
+Wire Wire Line
+	2100 2800 2200 2800
+Wire Wire Line
+	2300 2800 2300 2850
+Wire Wire Line
+	2200 2700 2200 2800
+Connection ~ 2200 2800
+Wire Wire Line
+	2200 2800 2300 2800
+Wire Wire Line
+	2850 2850 2850 2800
+Wire Wire Line
+	2850 2800 2950 2800
+Wire Wire Line
+	3050 2800 3050 2850
+Wire Wire Line
+	2950 2800 2950 2700
+Connection ~ 2950 2800
+Wire Wire Line
+	2950 2800 3050 2800
+Wire Wire Line
+	3600 2850 3600 2800
+Wire Wire Line
+	3600 2800 3700 2800
+Wire Wire Line
+	3800 2800 3800 2850
+Wire Wire Line
+	3700 2700 3700 2800
+Connection ~ 3700 2800
+Wire Wire Line
+	3700 2800 3800 2800
+Wire Wire Line
+	4350 2850 4350 2800
+Wire Wire Line
+	4350 2800 4450 2800
+Wire Wire Line
+	4550 2800 4550 2850
+Wire Wire Line
+	4450 2700 4450 2800
+Connection ~ 4450 2800
+Wire Wire Line
+	4450 2800 4550 2800
+Wire Wire Line
+	5100 2850 5100 2800
+Wire Wire Line
+	5100 2800 5200 2800
+Wire Wire Line
+	5300 2800 5300 2850
+Wire Wire Line
+	5200 2700 5200 2800
+Connection ~ 5200 2800
+Wire Wire Line
+	5200 2800 5300 2800
+Wire Wire Line
+	2100 3650 2100 3700
+Wire Wire Line
+	2100 3700 2200 3700
+Wire Wire Line
+	2300 3700 2300 3650
+Wire Wire Line
+	2850 3650 2850 3700
+Wire Wire Line
+	2850 3700 2950 3700
+Wire Wire Line
+	3050 3700 3050 3650
+Wire Wire Line
+	3600 3650 3600 3700
+Wire Wire Line
+	3600 3700 3700 3700
+Wire Wire Line
+	3800 3700 3800 3650
+Wire Wire Line
+	4350 3650 4350 3700
+Wire Wire Line
+	4350 3700 4450 3700
+Wire Wire Line
+	4550 3700 4550 3650
+Wire Wire Line
+	5100 3650 5100 3700
+Wire Wire Line
+	5100 3700 5200 3700
+Wire Wire Line
+	5300 3700 5300 3650
+Wire Wire Line
+	2200 3700 2200 3800
+Wire Wire Line
+	2200 3800 2950 3800
+Wire Wire Line
+	2950 3800 2950 3700
+Connection ~ 2200 3700
+Wire Wire Line
+	2200 3700 2300 3700
+Connection ~ 2950 3700
+Wire Wire Line
+	2950 3700 3050 3700
+Wire Wire Line
+	2950 3800 3700 3800
+Wire Wire Line
+	3700 3800 3700 3700
+Connection ~ 2950 3800
+Connection ~ 3700 3700
+Wire Wire Line
+	3700 3700 3800 3700
+Wire Wire Line
+	3700 3800 4450 3800
+Wire Wire Line
+	4450 3800 4450 3700
+Connection ~ 3700 3800
+Connection ~ 4450 3700
+Wire Wire Line
+	4450 3700 4550 3700
+Wire Wire Line
+	4450 3800 5200 3800
+Wire Wire Line
+	5200 3800 5200 3700
+Connection ~ 4450 3800
+Connection ~ 5200 3700
+Wire Wire Line
+	5200 3700 5300 3700
+$Comp
+L Device:R R20
+U 1 1 5F1DAF7E
+P 3700 4350
+F 0 "R20" H 3770 4396 50  0000 L CNN
+F 1 "10k" H 3770 4305 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 3630 4350 50  0001 C CNN
+F 3 "~" H 3700 4350 50  0001 C CNN
+	1    3700 4350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3700 3800 3700 4050
+$Comp
+L power:Earth #PWR0162
+U 1 1 5F1F8341
+P 3700 4650
+F 0 "#PWR0162" H 3700 4400 50  0001 C CNN
+F 1 "Earth" H 3700 4500 50  0001 C CNN
+F 2 "" H 3700 4650 50  0001 C CNN
+F 3 "~" H 3700 4650 50  0001 C CNN
+	1    3700 4650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3700 4650 3700 4500
+Text GLabel 3800 4050 2    50   Output ~ 0
+TECLADO
+Wire Wire Line
+	3800 4050 3700 4050
+Connection ~ 3700 4050
+Wire Wire Line
+	3700 4050 3700 4200
+$Comp
+L 24LC512-I_SM:24LC512-I_SM U4
+U 1 1 5F25E13B
+P 8200 3600
+F 0 "U4" H 8200 4370 50  0000 C CNN
+F 1 "24LC512-I_SM" H 8200 4279 50  0000 C CNN
+F 2 "24LC512-I_SM_eeprom:SOIC127P794X202-8N" H 8200 3600 50  0001 L BNN
+F 3 "" H 8200 3600 50  0001 C CNN
+	1    8200 3600
+	1    0    0    -1  
+$EndComp
+Text GLabel 7400 3600 0    50   Output ~ 0
+SCL
+Wire Wire Line
+	7400 3600 7500 3600
+$Comp
+L power:Earth #PWR0163
+U 1 1 5F29F5B1
+P 7300 3400
+F 0 "#PWR0163" H 7300 3150 50  0001 C CNN
+F 1 "Earth" H 7300 3250 50  0001 C CNN
+F 2 "" H 7300 3400 50  0001 C CNN
+F 3 "~" H 7300 3400 50  0001 C CNN
+	1    7300 3400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7300 3400 7350 3400
+Wire Wire Line
+	7350 3400 7350 3300
+Wire Wire Line
+	7350 3300 7500 3300
+Wire Wire Line
+	7500 3400 7350 3400
+Connection ~ 7350 3400
+Wire Wire Line
+	7350 3400 7350 3500
+Wire Wire Line
+	7350 3500 7500 3500
+$Comp
+L power:Earth #PWR0164
+U 1 1 5F2F8937
+P 7400 3700
+F 0 "#PWR0164" H 7400 3450 50  0001 C CNN
+F 1 "Earth" H 7400 3550 50  0001 C CNN
+F 2 "" H 7400 3700 50  0001 C CNN
+F 3 "~" H 7400 3700 50  0001 C CNN
+	1    7400 3700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7400 3700 7500 3700
+$Comp
+L power:Earth #PWR0165
+U 1 1 5F38B862
+P 8950 4150
+F 0 "#PWR0165" H 8950 3900 50  0001 C CNN
+F 1 "Earth" H 8950 4000 50  0001 C CNN
+F 2 "" H 8950 4150 50  0001 C CNN
+F 3 "~" H 8950 4150 50  0001 C CNN
+	1    8950 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8950 4150 8950 4100
+Wire Wire Line
+	8950 4100 8900 4100
+$Comp
+L power:+3.3V #PWR0166
+U 1 1 5F3C94B7
+P 8950 3050
+F 0 "#PWR0166" H 8950 2900 50  0001 C CNN
+F 1 "+3.3V" H 8965 3223 50  0000 C CNN
+F 2 "" H 8950 3050 50  0001 C CNN
+F 3 "" H 8950 3050 50  0001 C CNN
+	1    8950 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8950 3050 8950 3100
+Wire Wire Line
+	8950 3100 8900 3100
+$Comp
+L power:+3.3V #PWR0167
+U 1 1 5F3E8833
+P 8950 3350
+F 0 "#PWR0167" H 8950 3200 50  0001 C CNN
+F 1 "+3.3V" H 8965 3523 50  0000 C CNN
+F 2 "" H 8950 3350 50  0001 C CNN
+F 3 "" H 8950 3350 50  0001 C CNN
+	1    8950 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C21
+U 1 1 5F3E9770
+P 8950 3600
+F 0 "C21" H 9065 3646 50  0000 L CNN
+F 1 "100nF" H 9065 3555 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 8988 3450 50  0001 C CNN
+F 3 "~" H 8950 3600 50  0001 C CNN
+	1    8950 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8950 3350 8950 3450
+$Comp
+L power:Earth #PWR0168
+U 1 1 5F4091E8
+P 8950 3850
+F 0 "#PWR0168" H 8950 3600 50  0001 C CNN
+F 1 "Earth" H 8950 3700 50  0001 C CNN
+F 2 "" H 8950 3850 50  0001 C CNN
+F 3 "~" H 8950 3850 50  0001 C CNN
+	1    8950 3850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8950 3850 8950 3750
+$Comp
+L Device:R R23
+U 1 1 5F4288FD
+P 7200 3900
+F 0 "R23" V 7400 3900 50  0000 C CNN
+F 1 "2k" V 7300 3900 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 7130 3900 50  0001 C CNN
+F 3 "~" H 7200 3900 50  0001 C CNN
+	1    7200 3900
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+3.3V #PWR0169
+U 1 1 5F429F35
+P 6900 3900
+F 0 "#PWR0169" H 6900 3750 50  0001 C CNN
+F 1 "+3.3V" V 6915 4028 50  0000 L CNN
+F 2 "" H 6900 3900 50  0001 C CNN
+F 3 "" H 6900 3900 50  0001 C CNN
+	1    6900 3900
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6900 3900 7050 3900
+Wire Wire Line
+	7500 3900 7450 3900
+$Comp
+L PPTC161LFBN-RC:PPTC161LFBN-RC J9
+U 1 1 5F4B6E5E
+P 2850 6000
+F 0 "J9" V 3188 4372 50  0000 R CNN
+F 1 "LDC_header" V 3097 4372 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x16_P2.54mm_Vertical" H 3500 6100 50  0001 L CNN
+F 3 "http://www.sullinscorp.com/drawings/78_P(N)PxCxxxLFBN-RC,_10492-H.pdf" H 3500 6000 50  0001 L CNN
+F 4 "CONN HEADER FEMALE 16POS.1\" TIN" H 3500 5900 50  0001 L CNN "Description"
+F 5 "8.5" H 3500 5800 50  0001 L CNN "Height"
+F 6 "Sullins" H 3500 5700 50  0001 L CNN "Manufacturer_Name"
+F 7 "PPTC161LFBN-RC" H 3500 5600 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "" H 3500 5500 50  0001 L CNN "Mouser Part Number"
+F 9 "" H 3500 5400 50  0001 L CNN "Mouser Price/Stock"
+F 10 "" H 3500 5300 50  0001 L CNN "RS Part Number"
+F 11 "" H 3500 5200 50  0001 L CNN "RS Price/Stock"
+	1    2850 6000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:Earth #PWR0170
+U 1 1 5F4DB196
+P 2850 6100
+F 0 "#PWR0170" H 2850 5850 50  0001 C CNN
+F 1 "Earth" H 2850 5950 50  0001 C CNN
+F 2 "" H 2850 6100 50  0001 C CNN
+F 3 "~" H 2850 6100 50  0001 C CNN
+	1    2850 6100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2850 6100 2850 6000
+Text GLabel 3150 6100 3    50   Input ~ 0
+RS
+Wire Wire Line
+	3150 6100 3150 6000
+$Comp
+L power:Earth #PWR0171
+U 1 1 5F51B68A
+P 3250 6100
+F 0 "#PWR0171" H 3250 5850 50  0001 C CNN
+F 1 "Earth" H 3250 5950 50  0001 C CNN
+F 2 "" H 3250 6100 50  0001 C CNN
+F 3 "~" H 3250 6100 50  0001 C CNN
+	1    3250 6100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3250 6100 3250 6000
+Text GLabel 3350 6100 3    50   Input ~ 0
+E
+Wire Wire Line
+	3350 6100 3350 6000
+Wire Wire Line
+	3850 6000 3850 6100
+Wire Wire Line
+	3850 6100 3950 6100
+Wire Wire Line
+	3950 6100 3950 6000
+Wire Wire Line
+	4050 6100 4050 6000
+Connection ~ 3950 6100
+Wire Wire Line
+	4050 6100 4100 6100
+Wire Wire Line
+	4150 6100 4150 6000
+Connection ~ 4050 6100
+Text GLabel 3450 6100 3    50   Output ~ 0
+D4
+Text GLabel 3550 6100 3    50   Output ~ 0
+D5
+Text GLabel 3650 6100 3    50   Output ~ 0
+D6
+Text GLabel 3750 6100 3    50   Output ~ 0
+D7
+Wire Wire Line
+	3450 6100 3450 6000
+Wire Wire Line
+	3550 6100 3550 6000
+Wire Wire Line
+	3650 6100 3650 6000
+Wire Wire Line
+	3750 6100 3750 6000
+Wire Wire Line
+	3950 6100 4050 6100
+Wire Wire Line
+	4150 6100 4250 6100
+Wire Wire Line
+	4250 6100 4250 6000
+Connection ~ 4150 6100
+Wire Wire Line
+	4250 6100 4350 6100
+Wire Wire Line
+	4350 6100 4350 6000
+Connection ~ 4250 6100
+$Comp
+L power:Earth #PWR0172
+U 1 1 5F6A9B03
+P 4100 6150
+F 0 "#PWR0172" H 4100 5900 50  0001 C CNN
+F 1 "Earth" H 4100 6000 50  0001 C CNN
+F 2 "" H 4100 6150 50  0001 C CNN
+F 3 "~" H 4100 6150 50  0001 C CNN
+	1    4100 6150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4100 6150 4100 6100
+Connection ~ 4100 6100
+Wire Wire Line
+	4100 6100 4150 6100
+$Comp
+L 3296W-1-103RLF:3296W-1-103RLF R24
+U 1 1 5F6CC449
+P 3050 6550
+F 0 "R24" H 3050 6435 50  0000 C CNN
+F 1 "POT_LCD" H 3050 6344 50  0000 C CNN
+F 2 "3296W-1-103RLF_POT_LCD:TRIM_3296W-1-103RLF" H 3050 6550 50  0001 L BNN
+F 3 "IPC-7351B" H 3050 6550 50  0001 L BNN
+F 4 "11.55mm" H 3050 6550 50  0001 L BNN "Campo4"
+F 5 "Bourns" H 3050 6550 50  0001 L BNN "Campo5"
+F 6 "06/18" H 3050 6550 50  0001 L BNN "Campo6"
+	1    3050 6550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0173
+U 1 1 5F6CDF7C
+P 2600 6500
+F 0 "#PWR0173" H 2600 6350 50  0001 C CNN
+F 1 "+5V" H 2615 6673 50  0000 C CNN
+F 2 "" H 2600 6500 50  0001 C CNN
+F 3 "" H 2600 6500 50  0001 C CNN
+	1    2600 6500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2600 6500 2600 6550
+Wire Wire Line
+	2600 6550 2700 6550
+Wire Wire Line
+	3050 6350 3050 6000
+Wire Wire Line
+	2950 6350 2700 6350
+Wire Wire Line
+	2700 6350 2700 6550
+Wire Wire Line
+	2950 6000 2950 6350
+Connection ~ 2700 6550
+Wire Wire Line
+	2700 6550 2750 6550
+$Comp
+L power:Earth #PWR0174
+U 1 1 5F736644
+P 3400 6650
+F 0 "#PWR0174" H 3400 6400 50  0001 C CNN
+F 1 "Earth" H 3400 6500 50  0001 C CNN
+F 2 "" H 3400 6650 50  0001 C CNN
+F 3 "~" H 3400 6650 50  0001 C CNN
+	1    3400 6650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3400 6650 3400 6550
+Wire Wire Line
+	3400 6550 3350 6550
+Text GLabel 7450 3950 3    50   Output ~ 0
+SDA
+Wire Wire Line
+	7450 3950 7450 3900
+Connection ~ 7450 3900
+Wire Wire Line
+	7450 3900 7350 3900
+$Comp
+L power:+5V #PWR0175
+U 1 1 5FBA8C4C
+P 2400 5750
+F 0 "#PWR0175" H 2400 5600 50  0001 C CNN
+F 1 "+5V" H 2415 5923 50  0000 C CNN
+F 2 "" H 2400 5750 50  0001 C CNN
+F 3 "" H 2400 5750 50  0001 C CNN
+	1    2400 5750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C22
+U 1 1 5FBAA065
+P 2400 6050
+F 0 "C22" H 2515 6096 50  0000 L CNN
+F 1 "100nF" H 2515 6005 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 2438 5900 50  0001 C CNN
+F 3 "~" H 2400 6050 50  0001 C CNN
+	1    2400 6050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:Earth #PWR0176
+U 1 1 5FBAB5B8
+P 2400 6350
+F 0 "#PWR0176" H 2400 6100 50  0001 C CNN
+F 1 "Earth" H 2400 6200 50  0001 C CNN
+F 2 "" H 2400 6350 50  0001 C CNN
+F 3 "~" H 2400 6350 50  0001 C CNN
+	1    2400 6350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2400 6200 2400 6350
+Wire Wire Line
+	2400 5900 2400 5750
+$EndSCHEMATC

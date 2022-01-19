@@ -1,0 +1,96 @@
+Version 4.0 HI-TECH Software Intermediate Code
+"23 serial.c
+[; ;serial.c: 23: void serialSend(unsigned char c) {
+[v _serialSend `(v ~T0 @X0 1 ef1`uc ]
+{
+[e :U _serialSend ]
+[v _c `uc ~T0 @X0 1 r1 ]
+[f ]
+"24
+[; ;serial.c: 24:     while (!(((*(volatile __near unsigned char*)0xF9E)) & (1<<(4)) ));
+[e $U 2  ]
+[e :U 3 ]
+[e :U 2 ]
+[e $ ! != & -> *U -> -> 3998 `i `*VNuc `i << -> 1 `i -> 4 `i -> 0 `i 3  ]
+[e :U 4 ]
+"25
+[; ;serial.c: 25:     (*(volatile __near unsigned char*)0xFAD) = c;
+[e = *U -> -> 4013 `i `*VNuc _c ]
+"26
+[; ;serial.c: 26: }
+[e :UE 1 ]
+}
+"28
+[; ;serial.c: 28: unsigned char serialRead(void) {
+[v _serialRead `(uc ~T0 @X0 1 ef ]
+{
+[e :U _serialRead ]
+[f ]
+"29
+[; ;serial.c: 29:     unsigned char resp = 0;
+[v _resp `uc ~T0 @X0 1 a ]
+[e = _resp -> -> 0 `i `uc ]
+"31
+[; ;serial.c: 31:     if ((((*(volatile __near unsigned char*)0xFAB)) & (1<<(1)) )) {
+[e $ ! != & -> *U -> -> 4011 `i `*VNuc `i << -> 1 `i -> 1 `i -> 0 `i 6  ]
+{
+"32
+[; ;serial.c: 32:         (((*(volatile __near unsigned char*)0xFAB)) &= ~(1<<(4)) );
+[e =& *U -> -> 4011 `i `*VNuc -> ~ << -> 1 `i -> 4 `i `uc ]
+"33
+[; ;serial.c: 33:         (((*(volatile __near unsigned char*)0xFAB)) |= (1<<(4)));
+[e =| *U -> -> 4011 `i `*VNuc -> << -> 1 `i -> 4 `i `uc ]
+"34
+[; ;serial.c: 34:     }
+}
+[e :U 6 ]
+"35
+[; ;serial.c: 35:     if ((((*(volatile __near unsigned char*)0xF9E)) & (1<<(5)) )) {
+[e $ ! != & -> *U -> -> 3998 `i `*VNuc `i << -> 1 `i -> 5 `i -> 0 `i 7  ]
+{
+"36
+[; ;serial.c: 36:         resp = (*(volatile __near unsigned char*)0xFAE);
+[e = _resp *U -> -> 4014 `i `*VNuc ]
+"37
+[; ;serial.c: 37:     }
+}
+[e :U 7 ]
+"38
+[; ;serial.c: 38:     return resp;
+[e ) _resp ]
+[e $UE 5  ]
+"39
+[; ;serial.c: 39: }
+[e :UE 5 ]
+}
+"41
+[; ;serial.c: 41: void serialInit(void) {
+[v _serialInit `(v ~T0 @X0 1 ef ]
+{
+[e :U _serialInit ]
+[f ]
+"42
+[; ;serial.c: 42:     (*(volatile __near unsigned char*)0xFAC) = 0b00101100;
+[e = *U -> -> 4012 `i `*VNuc -> -> 44 `i `uc ]
+"43
+[; ;serial.c: 43:     (*(volatile __near unsigned char*)0xFAB) = 0b10010000;
+[e = *U -> -> 4011 `i `*VNuc -> -> 144 `i `uc ]
+"44
+[; ;serial.c: 44:     (*(volatile __near unsigned char*)0xFB8) = 0b00001000;
+[e = *U -> -> 4024 `i `*VNuc -> -> 8 `i `uc ]
+"45
+[; ;serial.c: 45:     (*(volatile __near unsigned char*)0xFB0) = 0;
+[e = *U -> -> 4016 `i `*VNuc -> -> 0 `i `uc ]
+"46
+[; ;serial.c: 46:     (*(volatile __near unsigned char*)0xFAF) = 34;
+[e = *U -> -> 4015 `i `*VNuc -> -> 34 `i `uc ]
+"47
+[; ;serial.c: 47:     (((*(volatile __near unsigned char*)0xF94)) |= (1<<(6)));
+[e =| *U -> -> 3988 `i `*VNuc -> << -> 1 `i -> 6 `i `uc ]
+"48
+[; ;serial.c: 48:     (((*(volatile __near unsigned char*)0xF94)) |= (1<<(7)));
+[e =| *U -> -> 3988 `i `*VNuc -> << -> 1 `i -> 7 `i `uc ]
+"49
+[; ;serial.c: 49: }
+[e :UE 8 ]
+}

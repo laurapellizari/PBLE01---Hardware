@@ -1,0 +1,285 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "Sub Circuito de Alimentação"
+Date "2020-04-13"
+Rev "Laura Pereira"
+Comp "Esquemático"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L power:GND #PWR0101
+U 1 1 5E945EB1
+P 2500 3200
+F 0 "#PWR0101" H 2500 2950 50  0001 C CNN
+F 1 "GND" H 2505 3027 50  0000 C CNN
+F 2 "" H 2500 3200 50  0001 C CNN
+F 3 "" H 2500 3200 50  0001 C CNN
+	1    2500 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L PJ-002A:PJ-002A J4
+U 1 1 5E946822
+P 2100 3050
+F 0 "J4" H 2095 3390 50  0000 C CNN
+F 1 "PJ-002A" H 2095 3299 50  0000 C CNN
+F 2 "pj-002A:CUI_PJ-002A" H 2100 3050 50  0001 L BNN
+F 3 "Manufacturer recommendations" H 2100 3050 50  0001 L BNN
+F 4 "CUI INC" H 2100 3050 50  0001 L BNN "Campo4"
+	1    2100 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N5819 D_Schottky1
+U 1 1 5E947E61
+P 2650 2950
+F 0 "D_Schottky1" H 2650 2734 50  0000 C CNN
+F 1 "1N5819" H 2650 2825 50  0000 C CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 2650 2775 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88525/1n5817.pdf" H 2650 2950 50  0001 C CNN
+	1    2650 2950
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2500 3050 2500 3150
+Wire Wire Line
+	2500 3050 2300 3050
+Wire Wire Line
+	2300 3150 2500 3150
+Connection ~ 2500 3150
+Wire Wire Line
+	2500 3150 2500 3200
+Wire Wire Line
+	2300 2950 2500 2950
+Wire Wire Line
+	2800 2950 2950 2950
+Wire Wire Line
+	2950 2650 2950 2950
+$Comp
+L Device:R R1
+U 1 1 5E94A5B0
+P 3350 3000
+F 0 "R1" V 3143 3000 50  0000 C CNN
+F 1 "470" V 3234 3000 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 3280 3000 50  0001 C CNN
+F 3 "~" H 3350 3000 50  0001 C CNN
+	1    3350 3000
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED LED_1
+U 1 1 5E94B116
+P 3650 3250
+F 0 "LED_1" V 3689 3133 50  0000 R CNN
+F 1 "LED_ALIM" V 3598 3133 50  0000 R CNN
+F 2 "LED_SMD:LED_1206_3216Metric_Castellated" H 3650 3250 50  0001 C CNN
+F 3 "~" H 3650 3250 50  0001 C CNN
+	1    3650 3250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0102
+U 1 1 5E94CBBF
+P 3650 3550
+F 0 "#PWR0102" H 3650 3300 50  0001 C CNN
+F 1 "GND" H 3655 3377 50  0000 C CNN
+F 2 "" H 3650 3550 50  0001 C CNN
+F 3 "" H 3650 3550 50  0001 C CNN
+	1    3650 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3650 3550 3650 3400
+Wire Wire Line
+	3650 3100 3650 3000
+Wire Wire Line
+	3650 3000 3500 3000
+Wire Wire Line
+	3200 3000 3100 3000
+Wire Wire Line
+	3100 3000 3100 2950
+Text GLabel 2950 2650 1    50   Input ~ 0
+Vin
+$Comp
+L power:+5V #PWR0103
+U 1 1 5E94D746
+P 3100 2950
+F 0 "#PWR0103" H 3100 2800 50  0001 C CNN
+F 1 "+5V" H 3115 3123 50  0000 C CNN
+F 2 "" H 3100 2950 50  0001 C CNN
+F 3 "" H 3100 2950 50  0001 C CNN
+	1    3100 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Regulator_Linear:LD1117S50TR_SOT223 U1
+U 1 1 5E94FBE2
+P 4900 3000
+F 0 "U1" H 4900 3242 50  0000 C CNN
+F 1 "LD1117S50TR_SOT223" H 4900 3151 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 4900 3200 50  0001 C CNN
+F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/CD00000544.pdf" H 5000 2750 50  0001 C CNN
+	1    4900 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C1
+U 1 1 5E950E09
+P 4300 3300
+F 0 "C1" H 4415 3346 50  0000 L CNN
+F 1 "100nF" H 4415 3255 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 4338 3150 50  0001 C CNN
+F 3 "~" H 4300 3300 50  0001 C CNN
+	1    4300 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4300 3150 4300 3000
+Wire Wire Line
+	4300 3000 4600 3000
+Wire Wire Line
+	4300 3450 4300 3650
+Wire Wire Line
+	4300 3650 4900 3650
+Wire Wire Line
+	4900 3650 4900 3300
+$Comp
+L Device:CP C2
+U 1 1 5E952FCC
+P 5500 3300
+F 0 "C2" H 5618 3346 50  0000 L CNN
+F 1 "10uF" H 5618 3255 50  0000 L CNN
+F 2 "Capacitor_Tantalum_SMD:CP_EIA-3216-10_Kemet-I" H 5538 3150 50  0001 C CNN
+F 3 "~" H 5500 3300 50  0001 C CNN
+	1    5500 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5200 3000 5500 3000
+Wire Wire Line
+	5500 3000 5500 3150
+Wire Wire Line
+	5500 3450 5500 3650
+Wire Wire Line
+	5500 3650 4900 3650
+Connection ~ 4900 3650
+$Comp
+L power:GND #PWR0104
+U 1 1 5E955C43
+P 4900 3650
+F 0 "#PWR0104" H 4900 3400 50  0001 C CNN
+F 1 "GND" H 4905 3477 50  0000 C CNN
+F 2 "" H 4900 3650 50  0001 C CNN
+F 3 "" H 4900 3650 50  0001 C CNN
+	1    4900 3650
+	1    0    0    -1  
+$EndComp
+Text GLabel 4150 3000 0    50   Input ~ 0
+Vin
+Wire Wire Line
+	4150 3000 4300 3000
+Connection ~ 4300 3000
+$Comp
+L power:+5V #PWR0105
+U 1 1 5E95693A
+P 5600 3000
+F 0 "#PWR0105" H 5600 2850 50  0001 C CNN
+F 1 "+5V" V 5615 3128 50  0000 L CNN
+F 2 "" H 5600 3000 50  0001 C CNN
+F 3 "" H 5600 3000 50  0001 C CNN
+	1    5600 3000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5600 3000 5500 3000
+Connection ~ 5500 3000
+$Comp
+L Regulator_Linear:LD1117S33TR_SOT223 U2
+U 1 1 5E9577FF
+P 7000 3000
+F 0 "U2" H 7000 3242 50  0000 C CNN
+F 1 "LD1117S33TR_SOT223" H 7000 3151 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 7000 3200 50  0001 C CNN
+F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/CD00000544.pdf" H 7100 2750 50  0001 C CNN
+	1    7000 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C3
+U 1 1 5E9589C8
+P 6400 3300
+F 0 "C3" H 6515 3346 50  0000 L CNN
+F 1 "100nF" H 6515 3255 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 6438 3150 50  0001 C CNN
+F 3 "~" H 6400 3300 50  0001 C CNN
+	1    6400 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP C4
+U 1 1 5E95A536
+P 7600 3300
+F 0 "C4" H 7718 3346 50  0000 L CNN
+F 1 "10uF" H 7718 3255 50  0000 L CNN
+F 2 "Capacitor_Tantalum_SMD:CP_EIA-3216-10_Kemet-I" H 7638 3150 50  0001 C CNN
+F 3 "~" H 7600 3300 50  0001 C CNN
+	1    7600 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7600 3150 7600 3000
+Wire Wire Line
+	7600 3000 7300 3000
+Wire Wire Line
+	7600 3450 7600 3650
+Wire Wire Line
+	7600 3650 7000 3650
+Wire Wire Line
+	6400 3650 6400 3450
+Wire Wire Line
+	7000 3300 7000 3650
+Connection ~ 7000 3650
+Wire Wire Line
+	7000 3650 6400 3650
+Wire Wire Line
+	6400 3150 6400 3000
+Wire Wire Line
+	6400 3000 6700 3000
+$Comp
+L power:GND #PWR0106
+U 1 1 5E95C0A1
+P 7000 3650
+F 0 "#PWR0106" H 7000 3400 50  0001 C CNN
+F 1 "GND" H 7005 3477 50  0000 C CNN
+F 2 "" H 7000 3650 50  0001 C CNN
+F 3 "" H 7000 3650 50  0001 C CNN
+	1    7000 3650
+	1    0    0    -1  
+$EndComp
+Text GLabel 6250 3000 0    50   Input ~ 0
+Vin
+Wire Wire Line
+	6250 3000 6400 3000
+Connection ~ 6400 3000
+$Comp
+L power:+3.3V #PWR0107
+U 1 1 5E95F087
+P 7750 3000
+F 0 "#PWR0107" H 7750 2850 50  0001 C CNN
+F 1 "+3.3V" V 7765 3128 50  0000 L CNN
+F 2 "" H 7750 3000 50  0001 C CNN
+F 3 "" H 7750 3000 50  0001 C CNN
+	1    7750 3000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7750 3000 7600 3000
+Connection ~ 7600 3000
+$EndSCHEMATC

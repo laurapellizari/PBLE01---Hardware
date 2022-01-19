@@ -1,0 +1,101 @@
+Version 4.0 HI-TECH Software Intermediate Code
+"4 adc.c
+[; ;adc.c: 4: void adcInit(void) {
+[v _adcInit `(v ~T0 @X0 1 ef ]
+{
+[e :U _adcInit ]
+[f ]
+"5
+[; ;adc.c: 5:     (((*(volatile __near unsigned char*)0xF92)) |= (1<<(0)));
+[e =| *U -> -> 3986 `i `*VNuc -> << -> 1 `i -> 0 `i `uc ]
+"7
+[; ;adc.c: 7:     (*(volatile __near unsigned char*)0xFC2) = 0b00000001;
+[e = *U -> -> 4034 `i `*VNuc -> -> 1 `i `uc ]
+"8
+[; ;adc.c: 8:     (*(volatile __near unsigned char*)0xFC1) = 0b00001101;
+[e = *U -> -> 4033 `i `*VNuc -> -> 13 `i `uc ]
+"9
+[; ;adc.c: 9:     (*(volatile __near unsigned char*)0xFC0) = 0b10101010;
+[e = *U -> -> 4032 `i `*VNuc -> -> 170 `i `uc ]
+"10
+[; ;adc.c: 10: }
+[e :UE 1 ]
+}
+"12
+[; ;adc.c: 12: int adcRead1(void) {
+[v _adcRead1 `(i ~T0 @X0 1 ef ]
+{
+[e :U _adcRead1 ]
+[f ]
+"13
+[; ;adc.c: 13:     unsigned int ADvalor;
+[v _ADvalor `ui ~T0 @X0 1 a ]
+"14
+[; ;adc.c: 14:     (*(volatile __near unsigned char*)0xFC2) = 0b00000001;
+[e = *U -> -> 4034 `i `*VNuc -> -> 1 `i `uc ]
+"15
+[; ;adc.c: 15:     (*(volatile __near unsigned char*)0xFC2) |= 0b00000010;
+[e =| *U -> -> 4034 `i `*VNuc -> -> 2 `i `uc ]
+"17
+[; ;adc.c: 17:     while ((((*(volatile __near unsigned char*)0xFC2)) & (1<<(1)) ));
+[e $U 3  ]
+[e :U 4 ]
+[e :U 3 ]
+[e $ != & -> *U -> -> 4034 `i `*VNuc `i << -> 1 `i -> 1 `i -> 0 `i 4  ]
+[e :U 5 ]
+"19
+[; ;adc.c: 19:     ADvalor = (*(volatile __near unsigned char*)0xFC4);
+[e = _ADvalor -> *U -> -> 4036 `i `*VNuc `ui ]
+"20
+[; ;adc.c: 20:     ADvalor <<= 8;
+[e =<< _ADvalor -> -> 8 `i `ui ]
+"21
+[; ;adc.c: 21:     ADvalor += (*(volatile __near unsigned char*)0xFC3);
+[e =+ _ADvalor -> *U -> -> 4035 `i `*VNuc `ui ]
+"22
+[; ;adc.c: 22:     return ADvalor/64;
+[e ) -> / _ADvalor -> -> 64 `i `ui `i ]
+[e $UE 2  ]
+"23
+[; ;adc.c: 23: }
+[e :UE 2 ]
+}
+"25
+[; ;adc.c: 25: int adcRead2(void) {
+[v _adcRead2 `(i ~T0 @X0 1 ef ]
+{
+[e :U _adcRead2 ]
+[f ]
+"26
+[; ;adc.c: 26:     unsigned int ADvalor;
+[v _ADvalor `ui ~T0 @X0 1 a ]
+"27
+[; ;adc.c: 27:     (*(volatile __near unsigned char*)0xFC2) = 0b00000101;
+[e = *U -> -> 4034 `i `*VNuc -> -> 5 `i `uc ]
+"28
+[; ;adc.c: 28:     (*(volatile __near unsigned char*)0xFC2) |= 0b00000010;
+[e =| *U -> -> 4034 `i `*VNuc -> -> 2 `i `uc ]
+"30
+[; ;adc.c: 30:     while ((((*(volatile __near unsigned char*)0xFC2)) & (1<<(1)) ));
+[e $U 7  ]
+[e :U 8 ]
+[e :U 7 ]
+[e $ != & -> *U -> -> 4034 `i `*VNuc `i << -> 1 `i -> 1 `i -> 0 `i 8  ]
+[e :U 9 ]
+"32
+[; ;adc.c: 32:     ADvalor = (*(volatile __near unsigned char*)0xFC4);
+[e = _ADvalor -> *U -> -> 4036 `i `*VNuc `ui ]
+"33
+[; ;adc.c: 33:     ADvalor <<= 8;
+[e =<< _ADvalor -> -> 8 `i `ui ]
+"34
+[; ;adc.c: 34:     ADvalor += (*(volatile __near unsigned char*)0xFC3);
+[e =+ _ADvalor -> *U -> -> 4035 `i `*VNuc `ui ]
+"35
+[; ;adc.c: 35:     return ADvalor/64;
+[e ) -> / _ADvalor -> -> 64 `i `ui `i ]
+[e $UE 6  ]
+"36
+[; ;adc.c: 36: }
+[e :UE 6 ]
+}

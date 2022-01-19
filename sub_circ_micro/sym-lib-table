@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name sub_circ_micro-rescue)(type Legacy)(uri ${KIPRJMOD}/sub_circ_micro-rescue.lib)(options "")(descr ""))
+  (lib (name sub_circ_alim-rescue)(type Legacy)(uri C:/Users/Usuario/Desktop/UNIFEI/5_semestre/aprendizagem_baseada_em_projetos/sub_circ_alim/sub_circ_alim/sub_circ_alim-rescue.lib)(options "")(descr ""))
+)
